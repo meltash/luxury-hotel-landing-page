@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel & Resort</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+</head>
+<body class="font-['Inter']">
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-sm">
+        <nav class="max-w-8xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <img src="hotel logo.png" alt="Hotel Logo" class="h-12">
+                </a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#rooms" class="text-gray-700 hover:text-custom">Rooms & Suites</a>
+                    <a href="#dining" class="text-gray-700 hover:text-custom">Dining</a>
+                    <a href="#spa" class="text-gray-700 hover:text-custom">Spa & Wellness</a>
+                    <a href="#events" class="text-gray-700 hover:text-custom">Events</a>
+                    <a href="#contact" class="text-gray-700 hover:text-custom">Contact</a>
+                    <button class="bg-custom text-white px-6 py-2 !rounded-button">Book Now</button>
+                </div>
+                <button class="lg:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="lg:hidden hidden mt-4" id="mobile-menu">
+                <a href="#rooms" class="block text-gray-700 hover:text-custom py-2">Rooms & Suites</a>
+                <a href="#dining" class="block text-gray-700 hover:text-custom py-2">Dining</a>
+                <a href="#spa" class="block text-gray-700 hover:text-custom py-2">Spa & Wellness</a>
+                <a href="#events" class="block text-gray-700 hover:text-custom py-2">Events</a>
+                <a href="#contact" class="block text-gray-700 hover:text-custom py-2">Contact</a>
+                <button class="w-full bg-custom text-white py-2 !rounded-button mt-2">Book Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative h-screen">
+            <div class="glide h-full">
+                <div class="glide__track h-full" data-glide-el="track">
+                    <ul class="glide__slides h-full">
+                        <li class="glide__slide">
+                            <img src="luxurious.jpg" class="w-full h-full object-cover" alt="Hotel Exterior">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="hotel suite.jpg" class="w-full h-full object-cover" alt="Luxury Suite">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="swimming pool.jpg" class="w-full h-full object-cover" alt="Infinity Pool">
+                        </li>
+                    </ul>
+                </div>
+                <div class="absolute bottom-10 left-0 right-0" data-glide-el="controls[nav]">
+                    <div class="flex justify-center gap-2">
+                        <button data-glide-dir="=0" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"></button>
+                        <button data-glide-dir="=1" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"></button>
+                        <button data-glide-dir="=2" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"></button>
+                    </div>
+                </div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+                    <h1 class="font-['Cormorant_Garamond'] text-6xl mb-4">Experience Luxury Redefined</h1>
+                    <p class="text-xl mb-8">Five-star excellence in the heart of the city</p>
+                    <button class="bg-custom text-white px-8 py-3 !rounded-button text-lg">Book Your Stay</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <form class="bg-white p-8 shadow-lg -mt-32 relative z-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Check In</label>
+                        <input type="date" class="w-full border-gray-300 !rounded-button">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Check Out</label>
+                        <input type="date" class="w-full border-gray-300 !rounded-button">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Guests</label>
+                        <select class="w-full border-gray-300 !rounded-button">
+                            <option>2 Adults</option>
+                            <option>3 Adults</option>
+                            <option>4 Adults</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button class="w-full bg-custom text-white py-3 !rounded-button">Check Availability</button>
+                    </div>
+                </form>
+
+                <div class="mt-24">
+                    <h2 class="font-['Cormorant_Garamond'] text-4xl text-center mb-16">Luxury Accommodations</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white shadow-lg">
+                            <img src="deluxe rooms.jpg" class="w-full h-64 object-cover" alt="Deluxe Room">
+                            <div class="p-6">
+                                <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Deluxe Room</h3>
+                                <p class="text-gray-600 mb-4">Elegant comfort with city views</p>
+                                <p class="text-custom font-semibold mb-4">From $450/night</p>
+                                <button class="w-full bg-custom text-white py-2 !rounded-button">View Details</button>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-lg">
+                            <img src="executive suite.jpg" class="w-full h-64 object-cover" alt="Executive Suite">
+                            <div class="p-6">
+                                <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Executive Suite</h3>
+                                <p class="text-gray-600 mb-4">Spacious luxury with separate living area</p>
+                                <p class="text-custom font-semibold mb-4">From $750/night</p>
+                                <button class="w-full bg-custom text-white py-2 !rounded-button">View Details</button>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-lg">
+                            <img src="presidential suit.jpg" class="w-full h-64 object-cover" alt="Presidential Suite">
+                            <div class="p-6">
+                                <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Presidential Suite</h3>
+                                <p class="text-gray-600 mb-4">Ultimate luxury with panoramic views</p>
+                                <p class="text-custom font-semibold mb-4">From $1,500/night</p>
+                                <button class="w-full bg-custom text-white py-2 !rounded-button">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dining" class="py-16">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="font-['Cormorant_Garamond'] text-4xl text-center mb-16">Luxury Amenities</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <i class="fas fa-utensils text-custom text-4xl mb-4"></i>
+                        <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Fine Dining</h3>
+                        <p class="text-gray-600">Michelin-starred restaurant featuring innovative cuisine</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-spa text-custom text-4xl mb-4"></i>
+                        <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Luxury Spa</h3>
+                        <p class="text-gray-600">World-class treatments and wellness facilities</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-swimming-pool text-custom text-4xl mb-4"></i>
+                        <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Infinity Pool</h3>
+                        <p class="text-gray-600">Rooftop pool with panoramic city views</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="spa" class="py-16 bg-gray-900 text-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="font-['Cormorant_Garamond'] text-4xl mb-6">Experience Excellence</h2>
+                        <p class="mb-8">Discover unparalleled luxury and personalized service at our five-star hotel. From our award-winning restaurants to our world-class spa, every moment of your stay is crafted to exceed expectations.</p>
+                        <button class="bg-custom text-white px-8 py-3 !rounded-button">Explore More</button>
+                    </div>
+                    <div>
+                        <img src="experience execellence.jpg" class="w-full rounded-lg shadow-lg" alt="Hotel Experience">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="py-16">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="font-['Cormorant_Garamond'] text-4xl text-center mb-16">Events & Weddings</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white shadow-lg p-6">
+                        <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Corporate Events</h3>
+                        <p class="text-gray-600 mb-4">Host your next corporate event in our state-of-the-art facilities.</p>
+                        <button class="w-full bg-custom text-white py-2 !rounded-button">Learn More</button>
+                    </div>
+                    <div class="bg-white shadow-lg p-6">
+                        <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Weddings</h3>
+                        <p class="text-gray-600 mb-4">Create unforgettable memories with our bespoke wedding packages.</p>
+                        <button class="w-full bg-custom text-white py-2 !rounded-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="font-['Cormorant_Garamond'] text-4xl text-center mb-16">Contact Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white shadow-lg p-6">
+                        <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Get in Touch</h3>
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Your Name" class="w-full border-gray-300 !rounded-button">
+                            <input type="email" placeholder="Your Email" class="w-full border-gray-300 !rounded-button">
+                            <textarea placeholder="Your Message" class="w-full border-gray-300 !rounded-button"></textarea>
+                            <button class="w-full bg-custom text-white py-2 !rounded-button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="bg-white shadow-lg p-6">
+                        <h3 class="font-['Cormorant_Garamond'] text-2xl mb-2">Our Location</h3>
+                        <p class="text-gray-600 mb-4">Moi Serei Avenue, Nairobi, Nrb 10001</p>
+                        <div class="aspect-w-16 aspect-h-9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808559999999!2d36.82154831475391!3d-1.2868998359799998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d4b8b8b8b8%3A0x8b8b8b8b8b8b8b8b!2sMoi%20Serei%20Avenue%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1629999999999!5m2!1sen!2ske" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="hotel logo.png" alt="Hotel Logo" class="h-12 mb-4">
+                    <p class="text-gray-400">Luxury redefined in the heart of the city.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#rooms" class="text-gray-400 hover:text-white">Rooms & Suites</a></li>
+                        <li><a href="#dining" class="text-gray-400 hover:text-white">Dining</a></li>
+                        <li><a href="#spa" class="text-gray-400 hover:text-white">Spa & Wellness</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-white">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Moi Serei Avenue</li>
+                        <li class="text-gray-400">Nairobi, Nrb 10001</li>
+                        <li class="text-gray-400">+1 (555) 123-4567</li>
+                        <li class="text-gray-400">info@luxuryhotel.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for exclusive offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 bg-gray-800 border-gray-700 text-white !rounded-button">
+                        <button class="bg-custom text-white px-4 ml-2 !rounded-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Luxury Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            autoplay: 5000,
+            animationDuration: 1000,
+            gap: 0,
+            perView: 1
+        }).mount();
+
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
