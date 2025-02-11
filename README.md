@@ -2,6 +2,12 @@
 
 Welcome to the **Luxury Hotel Landing Page** project! This is a beautifully designed, responsive, and high-quality landing page template for a luxury hotel. It provides users with an immersive experience as they explore your services, book rooms, and discover more about your offerings.
 
+## 🔗 Demo
+
+Check out the live demo of the landing page:  
+[Demo Link](https://luxury-hotel-landing-page.vercel.app/)
+
+
 ## **Preview** 📸
 ![hhotel screen](https://github.com/user-attachments/assets/26c0996b-fdd7-4772-b4ed-34151c33b111)
 
